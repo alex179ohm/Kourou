@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=kourou
+Exec=kourou
+Icon=org.creavo.Kourou
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=GTK;
+StartupNotify=true
+DBusActivatable=true

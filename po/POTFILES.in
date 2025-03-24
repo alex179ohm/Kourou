@@ -1,0 +1,6 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/org.creavo.Kourou.desktop.in
+data/org.creavo.Kourou.metainfo.xml.in
+data/org.creavo.Kourou.gschema.xml
+src/window.ui

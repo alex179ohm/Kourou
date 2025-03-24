@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.creavo.Kourou
+Exec=@bindir@/kourou --gapplication-service
