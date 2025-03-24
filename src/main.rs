@@ -18,11 +18,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-mod application;
+mod app;
 mod config;
 mod window;
 
-use self::application::KourouApplication;
+use self::app::KourouApplication;
 use self::window::KourouWindow;
 
 use config::{GETTEXT_PACKAGE, LOCALEDIR, PKGDATADIR};

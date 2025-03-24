@@ -23,7 +23,7 @@ use adw::prelude::*;
 use adw::subclass::prelude::*;
 use gtk::{gio, glib};
 
-use crate::config::{VERSION, AUTHOR};
+use crate::config;
 use crate::KourouWindow;
 
 mod imp {
@@ -34,7 +34,7 @@ mod imp {
 
     #[glib::object_subclass]
     impl ObjectSubclass for KourouApplication {
-        const NAME: &'static str = "KourouApplication";
+        const NAME: &'static str = "KeourouApplication";
         type Type = super::KourouApplication;
         type ParentType = adw::Application;
     }
@@ -44,7 +44,9 @@ mod imp {
             self.parent_constructed();
             let obj = self.obj();
             obj.setup_gactions();
+            //obj.set_accels_for_action("win.show-preferences", &["<primary>comma"]);
             obj.set_accels_for_action("app.quit", &["<primary>q"]);
+            obj.set_accels_for_action("window.close", &["<primary>w"]);
         }
     }
 
@@ -98,14 +100,14 @@ impl KourouApplication {
     fn show_about(&self) {
         let window = self.active_window().unwrap();
         let about = adw::AboutDialog::builder()
-            .application_name("kourou")
+            .application_name(config::NAME)
             .application_icon("org.creavo.Kourou")
-            .developer_name(AUTHOR)
-            .version(VERSION)
-            .developers(vec![AUTHOR])
+            .developer_name(config::AUTHOR)
+            .version(config::VERSION)
+            .developers(vec![config::AUTHOR])
             // Translators: Replace "translator-credits" with your name/username, and optionally an email or URL.
-            .translator_credits(&gettext("translator-credits"))
-            .copyright(format!("© 2025 {}", AUTHOR))
+            .translator_credits(&gettext(config::AUTHOR))
+            .copyright(format!("© 2025 {}", config::AUTHOR))
             .build();
 
         about.present(Some(&window));

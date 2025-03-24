@@ -1,7 +1,7 @@
 [package]
 name = "kourou"
 version = "0.1.0"
-authors = ["Alessandro Cresto Miseroglio <alessandro.cresto.miseroglio@creavo.lol"]
+authors = ["Alessandro <alessandro.cresto.miseroglio@creavo.lol>"]
 edition = "2021"
 
 [dependencies]
