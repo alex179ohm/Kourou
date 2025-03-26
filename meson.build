@@ -11,6 +11,7 @@ gnome = import('gnome')
 
 name = 'Kourou'
 base_id = 'org.creavo.Kourou'
+base_path = '/org/creavo/kourou'
 vcs_tag = run_command('git', 'rev-parse', '--short', 'HEAD', check: false).stdout().strip()
 
 subdir('data')

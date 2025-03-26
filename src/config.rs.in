@@ -1,4 +1,6 @@
 pub static NAME: &str = @NAME@;
+pub static BASE_ID: &str = @BASE_ID@;
+pub static BASE_PATH: &str = @BASE_PATH@;
 pub static VERSION: &str = @VERSION@;
 pub static GETTEXT_PACKAGE: &str = @GETTEXT_PACKAGE@;
 pub static LOCALEDIR: &str = @LOCALEDIR@;

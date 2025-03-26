@@ -83,7 +83,7 @@ impl KourouApplication {
         glib::Object::builder()
             .property("application-id", application_id)
             .property("flags", flags)
-            .property("resource-base-path", "/org/creavo/Kourou")
+            .property("resource-base-path", config::BASE_PATH)
             .build()
     }
 
