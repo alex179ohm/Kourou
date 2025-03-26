@@ -2,4 +2,7 @@
 target
 Cargo.lock
 
+# vscode
+.vscode
+
 **/*.gresource.xml

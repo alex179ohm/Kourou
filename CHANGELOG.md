@@ -10,3 +10,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - CHANGELOG.md file (#1)
 
+### Changed
+- Add .vscode path to .gitignore (#2)
